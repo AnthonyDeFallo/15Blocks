@@ -1,0 +1,164 @@
+#start {
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute;
+	font-size:300%;
+	z-index:9999;
+	text-decoration:none;
+	width:400px;
+	text-align:center;
+	top:175px;
+	text-shadow:1px 1px 1px #000;
+}
+#image {
+	width:400px;
+	height:400px;
+	background-image:url(theo2.jpg);
+	position:relative;
+}
+#image div {
+	width:100px;
+	height:100px;
+	background-image:url(theo2.jpg);
+	background-repeat:no-repeat;
+	position:absolute;
+}
+#counter {
+	position:absolute;
+	left:450px;
+	top:10px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:none;
+}
+#clock {
+	position:absolute;
+	left:450px;
+	top:100px;
+	font-family:Arial, Helvetica, sans-serif;
+	display:none;
+}
+#restart {
+	position:absolute;
+	left:450px;
+	top:30px;
+	display:none;
+}
+#counter span, #clock span {
+	font-size:300%;
+}
+.sq1 {
+	background-position:0 0;
+}
+.sq2 {
+	background-position:33% 0;
+}
+.sq3 {
+	background-position:66% 0;
+}
+.sq4 {
+	background-position:100% 0;
+}
+.sq5 {
+	background-position:0 33%;
+}
+.sq6 {
+	background-position:33% 33%;
+}
+.sq7 {
+	background-position:66% 33%;
+}
+.sq8 {
+	background-position:100% 33%;
+}
+.sq9 {
+	background-position:0 66%;
+}
+.sq10 {
+	background-position:33% 66%;
+}
+.sq11 {
+	background-position:66% 66%;
+}
+.sq12 {
+	background-position:100% 66%;
+}
+.sq13 {
+	background-position:0 100%;
+}
+.sq14 {
+	background-position:33% 100%;
+}
+.sq15 {
+	background-position:66% 100%;
+}
+.sq16 {
+	background-position:100% 100%;
+}
+#pos1 {
+	top:0;
+	left:0;
+}
+#pos2 {
+	top:0;
+	left:25%;
+}
+#pos3 {
+	top:0;
+	left:50%;
+}
+#pos4 {
+	top:0;
+	left:75%;
+}
+#pos5 {
+	top:25%;
+	left:0;
+}
+#pos6 {
+	top:25%;
+	left:25%;
+}
+#pos7 {
+	top:25%;
+	left:50%;
+}
+#pos8 {
+	top:25%;
+	left:75%;
+}
+#pos9 {
+	top:50%;
+	left:0;
+}
+#pos10 {
+	top:50%;
+	left:25%;
+}
+#pos11 {
+	top:50%;
+	left:50%;
+}
+#pos12 {
+	top:50%;
+	left:75%;
+}
+#pos13 {
+	top:75%;
+	left:0;
+}
+#pos14 {
+	top:75%;
+	left:25%;
+}
+#pos15 {
+	top:75%;
+	left:50%;
+}
+#pos16 {
+	top:75%;
+	left:75%;
+}
+.pointer {
+	background-image:none !important;
+	background-color:#fff;
+}
