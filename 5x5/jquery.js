@@ -41,7 +41,7 @@ function startGame()
 	window.moves = 0;
 	
 	// Define the array, then run a shuffle
-	var arrTemp = new Array(16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1);
+	var arrTemp = new Array(25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1);
 	var arr = randomize(arrTemp);
 	var strClass = "";
 	
@@ -89,7 +89,7 @@ function movePiece()
 				$("#counter span").html(window.moves);
 				
 				// Check if the puzzle is complete
-				if(parseInt($moveTo) == 16)
+				if(parseInt($moveTo) == 25)
 					isGameOver();
 			}
 		}
@@ -99,38 +99,56 @@ function movePiece()
 // Validate user's move
 function validMove(id,move)
 {
-	if(id == 1)
-		var arr = new Array(2,5);
-	else if(id == 2)
-		var arr = new Array(1,3,6);
-	else if(id == 3)
-		var arr = new Array(2,4,7);
-	else if(id == 4)
-		var arr = new Array(3,8);
-	else if(id == 5)
-		var arr = new Array(1,6,9);
-	else if(id == 6)
-		var arr = new Array(2,5,7,10);
-	else if(id == 7)
-		var arr = new Array(3,6,8,11);
-	else if(id == 8)
-		var arr = new Array(4,7,12);
-	else if(id == 9)
-		var arr = new Array(5,10,13);
-	else if(id == 10)
-		var arr = new Array(6,9,11,14);
-	else if(id == 11)
-		var arr = new Array(7,10,12,15);
-	else if(id == 12)
-		var arr = new Array(8,11,16);
-	else if(id == 13)
-		var arr = new Array(9,14);
-	else if(id == 14)
-		var arr = new Array(10,13,15);
-	else if(id == 15)
-		var arr = new Array(11,14,16);
-	else if(id == 16)
-		var arr = new Array(12,15);
+	if(id == 1) 
+		var arr = new Array(2,6);
+	else if(id == 2) 
+		var arr = new Array(1,3,7);
+	else if(id == 3) 
+		var arr = new Array(2,4,8);
+	else if(id == 4) 
+		var arr = new Array(3,5,9);
+	else if(id == 5) 
+		var arr = new Array(4,10);
+	else if(id == 6) 
+		var arr = new Array(1,7,11);
+	else if(id == 7) 
+		var arr = new Array(2,6,8,12);
+	else if(id == 8) 
+		var arr = new Array(3,7,9,13);
+	else if(id == 9) 
+		var arr = new Array(4,8,10,14);
+	else if(id == 10) 
+		var arr = new Array(5,9,15);
+	else if(id == 11) 
+		var arr = new Array(6,12,16);
+	else if(id == 12) 
+		var arr = new Array(7,11,13,17);
+	else if(id == 13) 
+		var arr = new Array(8,12,14,18);
+	else if(id == 14) 
+		var arr = new Array(9,13,15,19);
+	else if(id == 15) 
+		var arr = new Array(10,14,20);
+	else if(id == 16) 
+		var arr = new Array(11,17,21);
+	else if(id == 17) 
+		var arr = new Array(12,16,18,22);
+	else if(id == 18) 
+		var arr = new Array(13,17,19,23);
+	else if(id == 19) 
+		var arr = new Array(14,18,20,24);
+	else if(id == 20) 
+		var arr = new Array(15,19,21);
+	else if(id == 21) 
+		var arr = new Array(16,22);
+	else if(id == 22) 
+		var arr = new Array(17,21,23);
+	else if(id == 23) 
+		var arr = new Array(18,22,24);
+	else if(id == 24) 
+		var arr = new Array(19,23,25);
+	else if(id == 25) 
+		var arr = new Array(20,24);
 
 	if($.inArray(parseInt(move),arr) > -1)
 		return true;
@@ -139,13 +157,13 @@ function validMove(id,move)
 // Work out if game is over
 function isGameOver()
 {
-	for(i=1; i<=16; i++)
+	for(i=1; i<=25; i++)
 	{
 		if(!$("#image #pos" + i).hasClass("sq" + i))
 		{
 			break;
 		} else {
-			if(i == 16)
+			if(i == 25)
 			{
 				$("#pos16").removeClass("pointer");
 				$("#image div").off("click");
