@@ -165,9 +165,10 @@ function isGameOver()
 		} else {
 			if(i == 25)
 			{
-				$("#pos16").removeClass("pointer");
+				$("#pos25").removeClass("pointer");
 				$("#image div").off("click");
 				window.obj.Stop();
+				alert("CONGRATULATIONS! YOU WIN!");
 			}				
 		}
 	}
