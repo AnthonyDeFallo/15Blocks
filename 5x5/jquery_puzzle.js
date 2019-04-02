@@ -64,11 +64,11 @@ function startGame()
 	window.obj.Tick = timer_tick;
 	window.obj.Start();	
 	
-	movePiece();
+	slide();
 }
 
 // Move square
-function movePiece()
+function slide()
 {
 	$("#image div").on("click",function(){
 		if(!$(this).hasClass("pointer"))

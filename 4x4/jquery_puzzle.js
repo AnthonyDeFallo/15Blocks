@@ -63,11 +63,11 @@ function startGame()
 	window.obj.Tick = timer_tick;
 	window.obj.Start();	
 	
-	movePiece();
+	slide();
 }
 
 // Move square
-function movePiece()
+function slide()
 {
 	$("#image div").on("click",function(){
 		if(!$(this).hasClass("pointer"))
@@ -90,7 +90,7 @@ function movePiece()
 				
 				// Check if the puzzle is complete
 				if(parseInt($moveTo) == 16)
-					isGameOver();
+					solved();
 			}
 		}
 	});	
@@ -137,7 +137,7 @@ function validMove(id,move)
 }
 
 // Work out if game is over
-function isGameOver()
+function solved()
 {
 	for(i=1; i<=16; i++)
 	{
