@@ -13,6 +13,7 @@ $(function(){
 	});
 });
 
+// Shuffle function
 var randomize = function (array) {
 
 	var currentIndex = array.length;
